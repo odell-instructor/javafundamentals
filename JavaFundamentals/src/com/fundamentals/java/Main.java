@@ -4,8 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
         // houseExample();
-        lesson3Example();
+        // lesson3Example();
+        lesson4Example();
     } // end method
+
+    public static void lesson4Example() {
+        Lesson4 myLesson4 = new Lesson4();
+        // myLesson4.numericExamples();
+        // myLesson4.exponentExample();
+        // myLesson4.exampleImplicit();
+        // myLesson4.exampleExplicit();
+        myLesson4.sampleMethods();
+    }
+
 
     public static void lesson3Example() {
         Lesson3 myLesson3 = new Lesson3();
