@@ -1,12 +1,24 @@
 package com.fundamentals.java;
 
+import com.fundamentals.practice.ModifierPractice;
+
 public class Main {
 
     public static void main(String[] args) {
         // houseExample();
         // lesson3Example();
-        lesson4Example();
+        // lesson4Example();
+        modifiersExample();
     } // end method
+
+    public static void modifiersExample() {
+        ModifierPractice practice = new ModifierPractice();
+       // practice.examplePrivate(); // cannot access because of private modifier
+       // practice.exampleDefault(); // cannot access because of default modifier
+       // practice.exampleProtected("Matt"); // cannot access because of protected modifer
+        practice.examplePublic();
+        System.out.println(practice.isHere);
+    }
 
     public static void lesson4Example() {
         Lesson4 myLesson4 = new Lesson4();
