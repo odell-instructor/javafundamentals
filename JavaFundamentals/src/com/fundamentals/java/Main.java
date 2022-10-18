@@ -8,8 +8,21 @@ public class Main {
         // houseExample();
         // lesson3Example();
         // lesson4Example();
-        modifiersExample();
+        // modifiersExample();
+        lesson5Example();
     } // end method
+
+    public static void lesson5Example() {
+        Lesson5 lesson5 = new Lesson5();
+        // lesson5.localDateTimeExample();
+        // lesson5.localEpochExample();
+        // lesson5.localDateParseExample();
+        // lesson5.localDateExample();
+        // lesson5.epochDateExample();
+        // lesson5.localTimeExample();
+        // lesson5.bornDateFormatter();
+        lesson5.timePeriodExample();
+    }
 
     public static void modifiersExample() {
         ModifierPractice practice = new ModifierPractice();
