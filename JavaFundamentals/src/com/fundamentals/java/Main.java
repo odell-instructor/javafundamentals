@@ -9,8 +9,25 @@ public class Main {
         // lesson3Example();
         // lesson4Example();
         // modifiersExample();
-        lesson5Example();
+        // lesson5Example();
+        lesson6Example();
     } // end method
+
+    public static void lesson6Example() {
+        Lesson6 lesson6 = new Lesson6();
+        // lesson6.basicMath();
+        // lesson6.exampleModulus();
+        // lesson6.mathOrder();
+        // lesson6.addTwoNumbers();
+        // lesson6.exampleAssignment();
+        // lesson6.exampleRelationalEquals(12, 12);
+        // lesson6.exampleRelationGreater(10, 10);
+        // lesson6.exampleLogicalAnd(5, 7, 10);
+        // lesson6.exampleLogicalOr(10, 10, 15);
+        // lesson6.exampleLogicalNot(10, 15);
+        // lesson6.exampleIncrement();
+        lesson6.exampleDecrement();
+    }
 
     public static void lesson5Example() {
         Lesson5 lesson5 = new Lesson5();

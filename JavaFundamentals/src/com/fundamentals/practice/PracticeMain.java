@@ -9,7 +9,13 @@ public class PracticeMain {
     public static void main(String[] args) {
         //modifiers();
         //lessonsReference();
-        exampleVarArgs();
+        // exampleVarArgs();
+        operators();
+    }
+
+    public static void operators() {
+        OperatorsPractice practice = new OperatorsPractice();
+        practice.solveProblem();
     }
 
     public static void modifiers() {
