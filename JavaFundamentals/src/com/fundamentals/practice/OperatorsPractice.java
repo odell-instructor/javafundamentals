@@ -19,4 +19,32 @@ public class OperatorsPractice {
         System.out.println(sum2);
     }
 
+    /* The Math class*/
+    public void mathStuff(int val, int pow) {
+        System.out.println(Math.pow(val, pow));
+    }
+
+    public void ohmsLaw(int voltage, int resistance, int current) {
+        // figure out which formula to use to solve
+        // for either one.
+        /*
+        * i = v / r    i = current, v = voltage, r = resistance
+        * v = i * r
+        * r = v / i
+        * */
+        int total = 0;
+        if(voltage <= 0 && resistance > 0 && current > 0) {
+            total = current * resistance;
+        }
+        if(resistance <= 0 && voltage > 0 && current > 0) {
+            total = voltage / current;
+        }
+        if(current <= 0 && voltage > 0 && resistance > 0) {
+            total = voltage / resistance;
+        }
+
+        System.out.println(total);
+    }
+
+
 }

@@ -2,6 +2,8 @@ package com.fundamentals.java;
 
 import com.fundamentals.practice.ModifierPractice;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,7 +12,90 @@ public class Main {
         // lesson4Example();
         // modifiersExample();
         // lesson5Example();
-        lesson6Example();
+        // lesson6Example();
+        // lesson7Example();
+        // lesson8Example();
+        // lesson9Example();
+        // lesson10Examples();
+        // companyExample();
+        System.out.println("Hello Java");
+        lesson11Examples();
+    } // end method
+
+    public static void lesson11Examples() {
+        System.out.println(Lesson11.fahrenheitToCelsius(56));
+        System.out.println(Lesson11.celsiusToFahrenheit(13));
+        System.out.println(Lesson11.celsiusToKelvin(30));
+        System.out.println(Lesson11.kelvinToCelsius(286.64));
+        System.out.println(Lesson11.fahrenheitToKelvin(56));
+        System.out.println(Lesson11.kelvinToFahrenheit(335.648));
+    }
+
+    public static void companyExample() {
+        CompanyInfo info = new CompanyInfo();
+        info.id = 10101;
+        info.name = "Peter Parker";
+        info.display();
+        CompanyInfo.company = "Daily Bugle";
+        info.display();
+
+    }
+
+
+    public static void lesson10Examples() {
+        Lesson10 ten = new Lesson10();
+        // ten.stringArrayList();
+
+        ArrayList<House> houseList = ten.myHouseList(5);
+        // houseList.get(1).doorColor = "Red";
+        for(House house : houseList) {
+            //house.doorFunction();
+        }
+
+        //ten.exampleHashSet();
+        // ten.exampleHashMap();
+        ten.exampleLinkedList();
+
+    }
+
+    public static void lesson9Example() {
+        Lesson9 lesson9 = new Lesson9();
+        //lesson9.basicIntArray();
+        //lesson9.basicStringArray();
+        //lesson9.enhancedForArray();
+        //lesson9.basicTwoDimensionalArray();
+        // lesson9.basicThreeDimensionalArray();
+        lesson9.basicJaggedArray();
+    }
+
+
+    public static void lesson8Example() {
+        Lesson8 lesson8 = new Lesson8();
+        lesson8.basicWhileLoop();
+        lesson8.countdown();
+        lesson8.basicDowWhileLoop(10);
+        lesson8.basicForLoop(6);
+        lesson8.multiLoop(4, 8);
+        lesson8.forLoopStringExample();
+        lesson8.basicBranchExample();
+    }
+
+
+    public static void lesson7Example() {
+        Lesson7 lesson7 = new Lesson7();
+        // lesson7.basicIfStatement(11, 11);
+        // lesson7.basicIfElseStatement(10, 15);
+         lesson7.mathAndIf(5, 20, 122);
+        String result = lesson7.basicIfElseChain(15);
+        // System.out.println(result);
+
+        //lesson7.basicIfAndExample(17);
+        //lesson7.basicIfOrExample(18);
+        //lesson7.basicSwitch(4);
+        //lesson7.otherSwitch('t');
+        //lesson7.anotherSwitch(4);
+        System.out.println(lesson7.patternSwitch(3));
+
     } // end method
 
     public static void lesson6Example() {

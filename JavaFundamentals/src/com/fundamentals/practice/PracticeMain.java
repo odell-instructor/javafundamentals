@@ -10,7 +10,27 @@ public class PracticeMain {
         //modifiers();
         //lessonsReference();
         // exampleVarArgs();
-        operators();
+        // operators();
+        // looping();
+        // beer();
+        math();
+    }
+
+    public static void math() {
+        OperatorsPractice practice = new OperatorsPractice();
+        practice.mathStuff(23,5);
+    }
+
+    public static void beer() {
+        BottlesOfBeer beer = new BottlesOfBeer();
+        beer.beerSong();
+    }
+
+    public static void looping() {
+        LoopingPractice practice = new LoopingPractice();
+        practice.loopFive(100);
+        practice.loopFiveTwo();
+        practice.loopPrime();
     }
 
     public static void operators() {
