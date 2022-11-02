@@ -13,7 +13,61 @@ public class PracticeMain {
         // operators();
         // looping();
         // beer();
-        math();
+       // math();
+       // dogRecord();
+       // polyShapes();
+        carStuff();
+    }
+
+    // inheritance demo
+    public static void carStuff() {
+        SportsCar theCar = new SportsCar();
+        System.out.println(theCar.getHeadLightType());
+        System.out.println(theCar.getExteriorColor());
+
+        SportsCar otherSport = new SportsCar("LED light");
+        System.out.println(otherSport.getHeadLightType());
+        System.out.println(otherSport.getHorsePower());
+        System.out.println(otherSport.getExteriorColor());
+        //theCar.carShape();
+        //theCar.setExteriorColor("White");
+        //theCar.setHorsePower(300);
+        //theCar.setWheelSize(17);
+
+        MuscleCar myCar = new MuscleCar(3, 19, 445, "Green", "Round");
+        System.out.println(myCar.getExteriorColor());
+        System.out.println(myCar.getHorsePower());
+        //myCar.carShape(); // parent
+        myCar.motion(70); // grand parent
+        //myCar.setExteriorColor("Black");
+       // myCar.setHorsePower(500);
+       // myCar.setWheelSize(20);
+
+        Car myOther = new MuscleCar();
+        //myOther.carShape(); // can not see method from sportscar
+        myOther.motion(55);
+    }
+
+    public static void polyShapes() {
+        Pentagon pent1 = new Pentagon();
+        double angle1 = pent1.interiorAngleCalc();
+        System.out.println(angle1);
+
+        Hexagon hex1 = new Hexagon();
+        double angle2 = hex1.interiorAngleCalc();
+        System.out.println(angle2);
+
+        Polygon poly1 = new Pentagon();
+        double angle3 = poly1.interiorAngleCalc();
+        System.out.println(angle3);
+    }
+
+
+    public static void dogRecord() {
+        Dog myDog = new Dog(3, "Lab", 8);
+
+        System.out.println(myDog.breed());
+        myDog.move();
     }
 
     public static void math() {

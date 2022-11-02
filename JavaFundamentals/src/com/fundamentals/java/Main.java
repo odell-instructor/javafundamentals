@@ -18,9 +18,40 @@ public class Main {
         // lesson9Example();
         // lesson10Examples();
         // companyExample();
-        System.out.println("Hello Java");
-        lesson11Examples();
+        // System.out.println("Hello Java");
+       // lesson11Examples();
+        // encapulateHouse();
+         condoInheritance();
     } // end method
+
+    public static void condoInheritance() {
+        Condo myCondo = new Condo();
+        //myCondo.setBalconyType("Small balcony");
+        myCondo.doorFunction(); // from house now overridden
+        myCondo.maintenance(); // from Condo
+        System.out.println(myCondo.getBalconyType());
+        // error or a doorcolor?
+        System.out.println(myCondo.getDoorColor());
+    }
+
+    public static void encapulateHouse() {
+        House house1 = new House();
+        System.out.println(house1.getFoundationType());
+        System.out.println(house1.getRoofStyle());
+        System.out.println(house1.getDoorColor());
+        System.out.println(house1.getWindowSize());
+
+        House house2 = new House("Concrete","Shingle");
+        System.out.println(house2.getDoorColor());
+        System.out.println(house2.getWindowSize());
+
+        House house3 = new House("Dirt", "Bamboo", "Tan", 30);
+        System.out.println(house3.getFoundationType());
+        System.out.println(house3.getRoofStyle());
+        house3.doorFunction();
+        house3.doorFunction("My door opens short and its color is ");
+
+    }
 
     public static void lesson11Examples() {
         System.out.println(Lesson11.fahrenheitToCelsius(56));
@@ -166,20 +197,25 @@ public class Main {
     * */
     public static void houseExample() {
         House myHouse = new House();
-        myHouse.doorColor = "Red";
+        //myHouse.doorColor = "Red";
+        myHouse.setDoorColor("Red");
         myHouse.doorFunction();
 
         House otherHouse = new House();
-        otherHouse.doorColor = "Yellow";
+        //otherHouse.doorColor = "Yellow";
+        myHouse.setDoorColor("Yellow");
 
-        System.out.println(myHouse.doorColor);
-        System.out.println(otherHouse.doorColor);
+        //System.out.println(myHouse.doorColor);
+        System.out.println(myHouse.getDoorColor());
+        //System.out.println(otherHouse.doorColor);
+        System.out.println(otherHouse.getDoorColor());
 
         House thirdHouse = otherHouse;
-        thirdHouse.doorColor = "Blue";
+        // thirdHouse.doorColor = "Blue";
+        thirdHouse.setDoorColor("Blue");
 
-        System.out.println(thirdHouse.doorColor);
-        System.out.println(otherHouse.doorColor);
+        System.out.println(thirdHouse.getDoorColor());
+        System.out.println(otherHouse.getDoorColor());
     } // end method
 
 } // end class
