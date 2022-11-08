@@ -16,8 +16,32 @@ public class PracticeMain {
        // math();
        // dogRecord();
        // polyShapes();
-        carStuff();
+       // carStuff();
+        polyMath();
     }
+
+    public static void polyMath() {
+        Pentagon pentagon = new Pentagon(15,15,15,15,15);
+        System.out.println(pentagon.area());
+
+        Hexagon hexagon = new Hexagon(15);
+        System.out.println(hexagon.area());
+
+        Parallelogram para = new Parallelogram(15,30);
+        System.out.println(para.area());
+        System.out.println(para.getHeight());
+
+        Equilateral eq = new Equilateral(15);
+        System.out.println(eq.getPerimeter());
+        System.out.println(eq.numberOfSides);
+        System.out.println(eq.area());
+        System.out.println(eq.getHeight());
+
+        Isosceles iso = new Isosceles(20, 30);
+        System.out.println(iso.area());
+        System.out.println(iso.getHeight());
+    }
+
 
     // inheritance demo
     public static void carStuff() {
@@ -49,15 +73,15 @@ public class PracticeMain {
     }
 
     public static void polyShapes() {
-        Pentagon pent1 = new Pentagon();
+        Pentagon pent1 = new Pentagon(10,10,10,10,10);
         double angle1 = pent1.interiorAngleCalc();
         System.out.println(angle1);
 
-        Hexagon hex1 = new Hexagon();
+        Hexagon hex1 = new Hexagon(15);
         double angle2 = hex1.interiorAngleCalc();
         System.out.println(angle2);
 
-        Polygon poly1 = new Pentagon();
+        Polygon poly1 = new Pentagon(20,20,20,20,20); //up-casting
         double angle3 = poly1.interiorAngleCalc();
         System.out.println(angle3);
     }

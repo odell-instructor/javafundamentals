@@ -1,6 +1,7 @@
 package com.fundamentals.java;
 
 import com.fundamentals.practice.ModifierPractice;
+import com.fundamentals.practice.MovieGenres;
 
 import java.util.ArrayList;
 
@@ -21,8 +22,61 @@ public class Main {
         // System.out.println("Hello Java");
        // lesson11Examples();
         // encapulateHouse();
-         condoInheritance();
+        // condoInheritance();
+        //lesson15Example();
+        lesson16Example();
     } // end method
+
+    public static void lesson16Example() {
+        // Access enum from class
+        Lesson16 lesson16 = new Lesson16();
+        Lesson16.IceCreamFlavors ice = Lesson16.IceCreamFlavors.STRAWBERRY;
+        System.out.println(ice);
+        lesson16.myFavoriteFlavor(Lesson16.IceCreamFlavors.CHOCOLATE);
+
+        // Access enum from file
+        Week myDay = Week.MON;
+        System.out.println(myDay);
+        myDay.someEnumMethod();
+        System.out.println(myDay.getDayNum());
+
+        Week[] days = Week.values();
+        for(Week day : days) {
+            System.out.println("Week number " + day.getDayNum() + " goes with " + day);
+        }
+
+
+        // Access enum from other package
+        MovieGenres[] movie = MovieGenres.values();
+
+        for(MovieGenres genres : movie) {
+            //System.out.println(genres + " index of " + genres.ordinal());
+            System.out.println("This "+genres + " is rated " + genres.getRating() + " for all movies of this genre.");
+        }
+        System.out.println(MovieGenres.valueOf("HORROR")); // String is case sensitive to the enum
+    }
+
+
+    public static void lesson15Example() {
+        int[] numbers = {0,1,2,3,4,5,6,7,8,9};
+        HousePhone phone = new HousePhone(5,1,numbers,"LCD");
+        phone.receiveCall();
+        phone.sendCall();
+        System.out.println(phone.getScreen() + HousePhone.HASH);
+        phone.endCall();
+        phone.callerID("Spam", 5551234);
+
+
+        // Using the Abstract class with Up-Casting
+        AbstractTelephone myTele = new HousePhone(7, 2, numbers, "No Screen");
+        myTele.sendCall();
+        System.out.println(myTele);
+        myTele.prankCall(phone);
+
+        PhoneInterface myPhone2 = new HousePhone(4, 0, numbers, "what screen");
+        myPhone2.endCall();
+        System.out.println(PhoneInterface.HASH);
+    }
 
     public static void condoInheritance() {
         Condo myCondo = new Condo();
