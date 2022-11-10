@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class PracticeMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //modifiers();
         //lessonsReference();
         // exampleVarArgs();
@@ -16,8 +16,8 @@ public class PracticeMain {
        // math();
        // dogRecord();
        // polyShapes();
-       // carStuff();
-        polyMath();
+        //carStuff();
+       polyMath();
     }
 
     public static void polyMath() {
@@ -27,7 +27,7 @@ public class PracticeMain {
         Hexagon hexagon = new Hexagon(15);
         System.out.println(hexagon.area());
 
-        Parallelogram para = new Parallelogram(15,30);
+        Parallelogram para = new Parallelogram(15,0);
         System.out.println(para.area());
         System.out.println(para.getHeight());
 
@@ -44,7 +44,7 @@ public class PracticeMain {
 
 
     // inheritance demo
-    public static void carStuff() {
+    public static void carStuff() throws Exception {
         SportsCar theCar = new SportsCar();
         System.out.println(theCar.getHeadLightType());
         System.out.println(theCar.getExteriorColor());
@@ -57,8 +57,11 @@ public class PracticeMain {
         //theCar.setExteriorColor("White");
         //theCar.setHorsePower(300);
         //theCar.setWheelSize(17);
+        int numDoor = MuscleCar.verifyNumber(2,3,3);
+        int sizeWheel = MuscleCar.verifyNumber(17, 24, 19);
+        int power = MuscleCar.verifyNumber(275, 550, 445);
+        MuscleCar myCar = new MuscleCar(numDoor, sizeWheel, power, "Green", "Round");
 
-        MuscleCar myCar = new MuscleCar(3, 19, 445, "Green", "Round");
         System.out.println(myCar.getExteriorColor());
         System.out.println(myCar.getHorsePower());
         //myCar.carShape(); // parent

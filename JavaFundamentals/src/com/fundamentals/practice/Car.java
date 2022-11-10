@@ -1,6 +1,6 @@
 package com.fundamentals.practice;
 
-public class Car {
+public abstract class Car {
     private int numberOfDoors;
     private int wheelSize;
     private int horsePower;
@@ -29,6 +29,7 @@ public class Car {
     }
 
     public void setNumberOfDoors(int numberOfDoors) {
+
         this.numberOfDoors = numberOfDoors;
     }
 
@@ -54,6 +55,14 @@ public class Car {
 
     public void setExteriorColor(String exteriorColor) {
         this.exteriorColor = exteriorColor;
+    }
+
+    public static int verifyNumber(int min, int max, int value) throws Exception {
+        if(value >= min && value <= max) {
+            return value;
+        } else {
+            throw new Exception("The value is not within our specs");
+        }
     }
 
     @Override

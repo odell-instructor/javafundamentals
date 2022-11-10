@@ -11,7 +11,7 @@ public class SportsCar extends Car{
         this(2, 20, 450, "Red", headLightType);
     }
 
-    public SportsCar(int numberOfDoors, int wheelSize, int horsePower, String exteriorColor, String headLightType) {
+    public SportsCar(int numberOfDoors, int wheelSize, int horsePower, String exteriorColor, String headLightType){
         super(numberOfDoors, wheelSize, horsePower,exteriorColor);
         this.headLightType = headLightType;
     }

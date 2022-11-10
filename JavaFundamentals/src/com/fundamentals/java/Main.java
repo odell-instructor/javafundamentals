@@ -8,9 +8,17 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-       lesson17Example();
-
+       //lesson17Example();
+        lesson18Example();
     } // end method
+
+    public static void lesson18Example() {
+        Lesson18 my18 = new Lesson18();
+        //my18.exampleThrows();
+        //my18.sampleThrow(10, 0);
+        //my18.exampleException();
+        my18.myArrayException();
+    }
 
     public static void lesson17Example() {
         Lesson17 seventeen = new Lesson17();
