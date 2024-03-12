@@ -1,10 +1,10 @@
 package com.fundamentals.main;
 
 public class House {
-    protected String entranceDoorColor;
-    protected String foundationType;
-    protected String roofStyle;
-    protected int totalWindows;
+    private final String entranceDoorColor;
+    private final String foundationType;
+    private final String roofStyle;
+    private final int totalWindows;
 
     public House() {
         this("Cinder Blocks", "Grey");

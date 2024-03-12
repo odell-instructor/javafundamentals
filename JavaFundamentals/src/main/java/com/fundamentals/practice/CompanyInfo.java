@@ -2,11 +2,23 @@ package com.fundamentals.practice;
 
 /* Practice for using Static */
 public class CompanyInfo {
-
+    static final String ADDRESS = "123 Main St.";
     static String company = "Your Company";
+    private int id;
+    private String name;
 
-    int id;
-    String name;
+    public CompanyInfo(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public void display() {
         System.out.println("id: "+id +" Name:"+
