@@ -25,15 +25,21 @@ public class CompanyInfo {
                 name + " Company: "+company);
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
+
     public static void main(String[] args) {
-        CompanyInfo info = new CompanyInfo();
+       /* CompanyInfo info = new CompanyInfo();
         info.id = 10010;
         info.name = "Peter Parker";
         info.display();
         // update static variable
         CompanyInfo.company = "Daily Bugle";
         // call display a second time.
-        info.display();
+        info.display(); */
     }
 
 } // end class

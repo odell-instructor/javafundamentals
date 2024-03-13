@@ -17,8 +17,8 @@ public abstract class Telephone implements EndCallInterface{
     }
 
     // Add abstract methods
-    protected abstract void receiveCall();
-    protected abstract void sendCall();
+    public abstract void receiveCall();
+    public abstract void sendCall();
 
 
     public int getVolume() {

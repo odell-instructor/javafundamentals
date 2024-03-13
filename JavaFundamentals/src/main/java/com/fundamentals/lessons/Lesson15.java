@@ -13,7 +13,7 @@ public class Lesson15  implements Lesson15interface {
         System.out.println(Lesson15.LED);
         myLesson.turnOnDevice();
         myLesson.increaseVolume(12);
-        System.out.println(Lesson15interface.isEneryEfficient("LED"));
+        System.out.println(Lesson15interface.isEnergyEfficient("LED"));
     }
 
 } // end class

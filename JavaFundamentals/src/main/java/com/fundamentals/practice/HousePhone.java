@@ -8,12 +8,12 @@ public class HousePhone extends Telephone {
     }
 
     @Override
-    protected void receiveCall() {
+    public void receiveCall() {
         System.out.println("Receiving Phone call");
     }
 
     @Override
-    protected void sendCall() {
+    public void sendCall() {
         System.out.println("Sending Phone call");
     }
 

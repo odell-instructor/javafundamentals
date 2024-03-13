@@ -6,7 +6,7 @@ public interface Lesson15interface {
     String LED = "LED";
 
     // static method
-    static boolean isEneryEfficient(String electricType) {
+    static boolean isEnergyEfficient(String electricType) {
         return electricType.equals(LED);
     } // end method
 

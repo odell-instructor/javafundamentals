@@ -53,6 +53,14 @@ public class House {
                 " door opens");
     }
 
+    @Override
+    public String toString() {
+        return "House - Foundation: " + getFoundationType() +
+                " Roof Style: " + getRoofStyle() +
+                " Entrance Door Color: " + getEntranceDoorColor() +
+                " Number of Windows: " + getTotalWindows();
+    } // end method
+
     public static void main(String[] args) {
         House myHouse = new House();
         myHouse.doorFunction();
