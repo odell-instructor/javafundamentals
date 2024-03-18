@@ -15,4 +15,5 @@ public enum Week {
     public void weekMethod() {
         System.out.println("Method inside an Enum");
     }
+
 }
